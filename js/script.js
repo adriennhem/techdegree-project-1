@@ -1,6 +1,5 @@
 // Create an array of 5 objects named quotes
 // Properties: quote, source, citation, year
-
 let quotes = [
     {
         quote: "Women love us for our defects. If we have enough of them, they will forgive us everything, even our intellects.",
@@ -37,9 +36,26 @@ let quotes = [
 // create random quote object builder.
 function getRandomQuote() {
     // Code to get quote from array
-
+    let randomNumber =  Math.floor( Math.random() * Math.floor(quotes.length));
+    return quotes[randomNumber];
 };
 
 function printQuote() {
     // Code to print the quote
+    let randomQuote = getRandomQuote(); 
+    let htmlOutput = `<p class="quote">${randomQuote.quote}</p>
+                      <p class="source">${randomQuote.source}`
+
+    if (randomQuote.citation != '') {
+        htmlOutput += `<span class="citation">${randomQuote.citation}</span>`
+    }
+    if (randomQuote.year != '') {
+        htmlOutput += `<span class="year">${randomQuote.year}</span>`
+    }
+
+    htmlOutput += `</p>`;
+    document.getElementById('quote-box').innerHTML = htmlOutput; 
+
 };
+
+printQuote();
