@@ -1,6 +1,8 @@
 # Techdegree Project 1
 ## Build a random quote generator
 
+This is a project built for the techdegree portfollio of Treehouse. It displays a random quote based on an array of 5 quotes. The object literral has several properties: quote, citation, source, year, and tags. The background changes color when a new quote is displayed. 
+
 ### Features 
 
 #### Display a random quote when the button is clicked. 
