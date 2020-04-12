@@ -2,5 +2,4 @@
 
 ## Build a random quote generator
 
-![](https://media.giphy.com/media/kfdWmcO5s7dqZVpW7F/giphy.gif | width=50)
-
+<img src="https://media.giphy.com/media/kfdWmcO5s7dqZVpW7F/giphy.gif" width="200" />
